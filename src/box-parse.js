@@ -120,7 +120,7 @@ BoxParser.parseOneBox = function(stream, headerOnly, parentSize) {
 }
 
 BoxParser.Box.prototype.parse = function(stream) {
-	if (this.type != "mdat") {
+	if (true) {
 		this.data = stream.readUint8Array(this.size-this.hdr_size);
 	} else {
 		if (this.size === 0) {
